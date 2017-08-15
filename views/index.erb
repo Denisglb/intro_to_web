@@ -1,0 +1,33 @@
+<header>
+<div>
+<% if @name %>
+ 
+	<h1><center> Welcome to <%= @name %> Land! </center></h1>
+  <!-- <h2><center> It is <%= @age %> years old </center></h2> -->
+  <%end%>
+</div>
+
+<div style = 'background: grey'>
+<h1 style = 'color: red; size: 20px; text-align: center;'>Menu</h1>
+</div>
+</header>
+
+<form action="/named-cat" method = "post" style = 'margin: 0 auto;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  padding-top: 20px;
+  display: block;
+  margin: auto;'>
+    <div>
+        <input type="text" name="name">
+       <!--  <input type="text" age="age"> -->
+    	<input type="submit" value = "Submit">
+	</div>
+
+</form>
+
+<div> 
+	<img src='https://s-media-cache-ak0.pinimg.com/736x/f1/b5/ba/f1b5baa9be94e4f5605f49e3afc3f16c--harp-seal-pup-baby-harp-seal.jpg' style='border: medium dashed red; display: block; margin: auto; width: 40%;'>
+</div>
+

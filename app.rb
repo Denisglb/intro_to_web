@@ -6,12 +6,22 @@ get '/' do
  rejgenq	w;rw 	wkjqfbf	ewqwgf v unicorn"
 end
 
-get '/cat' do
-  
-"<div> 
-<img src='http://bit.ly/1eze8aE' style='border: medium dashed red'>
+post '/randomcat' do
+ @name = ["Cat", "Dog", "Capabera"].sample
+erb(:index)
+end
 
-</div>"
+post '/named-cat' do
+	p params
+	@name = params[:name]
+	@age = params[:age]
+	erb(:index)
+end
 
+get '/form-cat' do
+	p params
+	@name = params[:name]
+	@age = params[:age]
+	erb(:index)
 end
 
